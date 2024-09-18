@@ -144,7 +144,6 @@ let Student = function (name, surname) {
     if (subject in this.grades) {
       this.grades[subject] = [...this.grades[subject], grade];
     } else {
-      console.log("tworze obiekt");
       this.grades = { ...this.grades, [subject]: [grade] };
     }
   };
